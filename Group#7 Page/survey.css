@@ -1,0 +1,73 @@
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    min-height: 250vh;
+    width: 100%;
+    background-color: #e4bc84;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+
+.title{
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.form-container{
+	display: grid;
+	place-items: center;
+	width: 600px;
+	padding: 30px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	border-radius: 15px;
+	margin: 20px;
+}
+.form-container h1{
+	margin:0 0 15px;
+	font-size: 46px;
+}
+
+.output {
+	display: grid;
+	place-items: center;
+	width: 600px;
+	padding: 30px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	border-radius: 15px;
+}
+
+input{
+	width: 100%;
+	height: 50px;
+	padding: 15px;
+	line-height: 20px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	border:2px solid #000;
+	border-radius: 5px;
+}
+input[type="button"]{
+	width: 200px;
+	background: #003046;
+	color: #fff;
+	border:0;
+	cursor: pointer;
+}
+#ajax-data{
+	text-align: left;
+	font-size: 20px;
+}

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #54677c;
+}
+
+body {
+    min-height: 250vh;
+    width: 100%;
+    background-color: #e4bc84;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #80411e;
+    padding: 20px;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+}
+
+h1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 80px;
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #444444;
+    background-color: #ad6d2f;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #FFE3F6;
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #80411e;
+    padding: 80px;
+    bottom: 0; 
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-text {
+
+    text-decoration: none;
+    color: #444444;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    background-color:#d2c1b0;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin: 56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+                0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+
+
+.container {
+    position: absolute;
+    top: 250px;
+    left:400px;
+    width: 1000px;
+    height: 300px;
+    background-color:#d2c1b0;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+ 
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    
+   
+}
+
+.coffee-image {
+    animation: linear;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 400px;
+    left: 250px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+                0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button i {
+    color: #fff;
+    font-size: 2em;
+}
+
+button.github {
+    background-color: #24292e;
+}
+
+button.facebook {
+    background-color: #1877F2;
+}
+
+div.gallery {
+    position: relative;
+    width: 300px;
+    background-color:#d2c1b0;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin: 56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .coffee-name {
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.bg-pic {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    height: 50;
+}
+
+.container-bg {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    transition: ease-in-out 0.5s;
+    background-color:#d2c1b0;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    color: #333;
+    letter-spacing: 0.8px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.container-bg:hover {
+    width: 50%;
+}
